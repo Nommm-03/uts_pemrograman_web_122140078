@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.product-title {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.product-grid {
+  margin: 0 auto;
+  max-width: 1200px; /* Batas maksimal lebar */
+  width: 100%; /* Lebar responsif */
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); /* Grid layout */
+  gap: 20px; /* Jarak antar kartu */
+}

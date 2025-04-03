@@ -1,0 +1,62 @@
+/* Default Styling */
+.navbar {
+  background-color: rgba(209, 204, 205, 0.652);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  gap: 150px;
+}
+
+.navbar-logo {
+  background-color: black;
+  color: white;
+  padding: 2px;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  color: white;
+  margin: 100px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.navbar-links:hover {
+  color: rgb(69, 68, 68);
+  transition: 0.3s;
+}
+
+/* Media Query untuk Layar Lebar (Desktop) */
+@media (min-width: 1200px) {
+  .navbar {
+    gap: 200px; /* Memperbesar jarak antar elemen di layar besar */
+  }
+
+  .navbar-logo {
+    font-size: 32px; /* Memperbesar ukuran logo */
+  }
+
+  .navbar-links {
+    font-size: 28px; /* Memperbesar ukuran teks link */
+    margin: 120px; /* Menambah jarak margin */
+  }
+}
+
+/* Media Query untuk Tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .navbar {
+    gap: 100px; /* Mengurangi jarak antar elemen */
+  }
+
+  .navbar-logo {
+    font-size: 24px; /* Mengurangi ukuran logo */
+  }
+
+  .navbar-links {
+    font-size: 22px; /* Mengurangi ukuran teks link */
+    margin: 80px; /* Mengurangi jarak margin */
+  }
+}
